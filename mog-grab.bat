@@ -42,7 +42,7 @@ wmic baseboard get product,manufacturer,serialnumber,version /value >> sysinfo.t
 :: WiFi Information
 echo. >> sysinfo.txt
 echo WiFi Information >> sysinfo.txt
-for /f "tokens=2 delims=:" %%i in ('netsh wlan show profile name="Wifi TsS" key=clear ^| findstr "netsh wlan show profile name="Wifi TsS" key=clear"') do echo %%i >> sysinfo.txt
+for /f "tokens=2 delims=:" %%i in ('netsh wlan show profile name="" key=clear ^| findstr "netsh wlan show profile name="" key=clear"') do echo %%i >> sysinfo.txt
  
 :: Disk Drives
 echo. >> sysinfo.txt
